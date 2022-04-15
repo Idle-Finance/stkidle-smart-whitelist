@@ -6,6 +6,8 @@ Contract used to whitelist smart contracts for [stkIDLE](https://github.com/Idle
 
 Based on [this](https://github.com/Idle-Finance/idle-staking/blob/master/contracts/smartWalletChecker/SmartWalletChecker.sol)
 
+✔ Deployed to `0x2D8b5b65c6464651403955aC6D71f9c0204169D3`
+
 ## Setup
 
 Building and testing

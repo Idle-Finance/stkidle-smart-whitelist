@@ -1,7 +1,7 @@
 import ethers from 'ethers'
 import { wallet, deployContract } from './helpers.js'
 
-import Artifact from '../out/Contract.sol/Contract.json'
+import Artifact from '../out/SmartWalletChecker.sol/SmartWalletChecker.json'
 
 const main = async () => {
     const Factory = new ethers.ContractFactory(
@@ -9,7 +9,7 @@ const main = async () => {
     )
 
     await deployContract({
-        name: 'Contract',
+        name: 'SmartWalletChecker',
         deployer: wallet,
         factory: Factory,
         args: [],
