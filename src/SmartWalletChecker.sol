@@ -47,6 +47,6 @@ contract SmartWalletChecker is Ownable, ISmartWalletChecker {
    * @param addr The contract address to check.
    */
   function check(address addr) external view override returns (bool) {
-    return isOpen ? true : _enabledAddresses[addr];
+    return isOpen || _enabledAddresses[addr];
   }
 }

@@ -1,37 +1,15 @@
-# Idle Foundry Template
+# Idle Smart Wallet Checked for stkIDLE
 
-Based on https://github.com/libevm/forge-example
+Based on https://github.com/Idle-Finance/idle-foundry-template
 
-with some minor modifications/additions to the solidity side such as `BaseTest.sol`
+Contract used to whitelist smart contracts for [stkIDLE](https://github.com/Idle-Finance/idle-staking/blob/master/contracts/curve/VotingEscrow.vy)
 
-## Overview
+Based on [this](https://github.com/Idle-Finance/idle-staking/blob/master/contracts/smartWalletChecker/SmartWalletChecker.sol)
 
-- Uses [forge](https://github.com/gakonst/foundry) to compile, test, and debug.
-- Uses a custom JS script to deploy, see [deploy.js](https://github.com/libevm/forge-example/blob/main/scripts/deploy.js).
-
-## Development
+## Setup
 
 Building and testing
 ```bash
-forge build
-forge test
-
-# forking from existing state
-# -vvv = very very verbose
-# forge test -f http://127.0.0.1:8545 -vvv
-
-# To access the debugger
-# forge run --debug src/test/Contract.t.sol --sig "testExample()"
+forge install
+yarn
 ```
-
-## Contract Deployment
-
-Copy `.env.example` to `.env` and fill it out with correct details.
-
-```bash
-node --experimental-json-modules scripts/deploy.js
-```
-
-## Etherscan Verification
-
-Check here https://github.com/libevm/forge-example#etherscan-verification
